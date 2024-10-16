@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+        /* Keyframes for fadeInUp animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for popup */
+        .overlay-container.show {
+            display: flex;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="justify-between items-center md:items-start">
+            <h2>ABOUT ME</h2>
+            <p>Software Engineer with specialty in MERN Stack having 2 years of Web and Mobile apps Development experience with great hands-on experience in JavaScript 
+                frameworks. Proficient in MERN stack development and React Native mobile apps. Exceptional communication and problem-solving skills focused on driving 
+                innovation and achieving company objectives.</p>
+            <div>
+                <ul class="flex flex-wrap gap-2 mt-2">
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#html</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#ss</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#javascript></li> 
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#react.js</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#node.js</li> 
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#mongoDB</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#mongoose</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#reduxtoolkit</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#express.js</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#tailwindcss</li> 
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#github</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#typescript</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#mysql</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#bootstrap</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#jira</li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">#vite</li>
+                </ul>
+            </div>
+            <div class="">
+                <h2>MERN STACK</h2>
+                <div class="flex flex-row">
+                    <div class="tooltip-icon mongodb">
+                        <img src="./tooltip_icons/mongodb.svg" alt="mongodb"/>
+                        <span>M</span>
+                        <div class="tooltip"><span>mongoDB</span></div>
+                    </div>
+              <div class="tooltip-icon express">
+                <div class="tooltip"><span>Express.js</span></div>
+                <img src="./tooltip_icons/express.svg" alt="express"/>
+                <span>E</span>
+              </div>
+              <div class="tooltip-icon react">
+                <img src="./tooltip_icons/react.svg" alt="react"/>
+                <span>R</span>
+                <div class="tooltip"><span>React.js</span></div>
+              </div>
+              <div class="tooltip-icon node">
+                <img src="./tooltip_icons/node.svg" alt="node"/>
+                <span>N</span>
+                <div class="tooltip"><span>Node.js</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <img src="./images/coder.svg" alt="">
+        </div>
+      </div>
+
+
+    
+    <!-- <button class="btn-open-popup" onclick="togglePopup()">
+      Open Popup Form
+      </button>
+    <div id="popupOverlay" 
+         class="overlay-container">
+        <div class="popup-box">
+            <h2 style="color: green;">Popup Form</h2>
+            <form class="form-container">
+                <label class="form-label" 
+                       for="name">
+                  Username:
+                  </label>
+                <input class="form-input" type="text" 
+                       placeholder="Enter Your Username" 
+                       id="name" name="name" required>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Enter Your Email"
+                       id="email" 
+                       name="email" required>
+
+                <button class="btn-submit" 
+                        type="submit">
+                  Submit
+                  </button>
+            </form>
+
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()">
+              Close
+              </button>
+        </div>
+    </div> -->
+
+    <script>
+        function togglePopup() {
+            const overlay = document.getElementById('popupOverlay');
+            overlay.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
